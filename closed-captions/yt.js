@@ -1,3 +1,4 @@
+const fx = true;
 var player;
 
 function onYouTubeIframeAPIReady() {
@@ -9,6 +10,7 @@ function onYouTubeIframeAPIReady() {
       color: 'white',
       //start:
       //autoplay: '1'
+      rel: 0,
       //playlist: 'taJ60kskkns,FG0fTKAqZ5g'
     },
     events: {
@@ -28,7 +30,7 @@ function broodjeAap(e) {
   const $bgVid = document.querySelector('.bg-video');
 
   console.log(e.data);
-  if (e.data == 1) {
+  if (e.data == 1 && fx) {
     $bgVid.src += '&autoplay=1';
     $bgVid.src += '&mute=1';
 
@@ -110,6 +112,8 @@ function initialize() {
   document.body.appendChild(cln);
   // Update the controls on load
   addSpans();
+
+  document.querySelector('.ytp-pause-overlay').style.display = 'none';
 }
 
 function addSpans() {

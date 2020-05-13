@@ -80,6 +80,7 @@ body
 
 #closed-captions
   height: 100px
+  font-family: "Brenner Mono Light"
 
   & p
     position: absolute
@@ -107,67 +108,6 @@ div#closed-captions
   text-align: center
   text-transform: uppercase
   color: #fff
-
-#closed-captions
-  display: flex
-  justify-content: center
-  width: 100vw
-
-  & p.voice2.p7
-    transition: 2s all ease-in-out
-    transform: translateX(180px)
-
-  & p.voice2.p7.on
-    transform: translateX(240px)
-
-  & .standard-voice
-    text-transform: initial !important
-    font-size: 16px !important
-
-  & p.voice3.p6
-    transition: 1s transform
-    transform: translate(-141px, -145px) scale(2)
-    text-transform: uppercase
-
-  & p.voice3.p6.on
-    transform: translate(-161px, -135px) scale(2)
-    transform: translate(-141px, -145px)
-    text-transform: uppercase
-
-  & p.voice3.p6.on
-    transform: translate(-161px, -135px)
-
-  & .first-test p.voice1
-    max-width: 550px
-    font-size: 20px
-
-  & .second-test
-    font-style: italic
-
-  & .one-liner
-    position: fixed
-    top: 50%
-    right: 0
-    mix-blend-mode: color
-    left: 0
-    max-width: initial !important
-    max-width: 100%
-    margin: 0 auto
-    transform: translateY(-50%)
-    text-align: center
-    vertical-align: middle
-    word-break: break-all
-    pointer-events: none
-    color: red
-    font-size: 320px !important
-    font-size: 24vw !important
-    line-height: 0.7
-
-  & p.voice2.p42.on
-    transform: translateY(10px) scale(0.9)
-
-  & p.voice2.p43.on
-    transform: translateY(20px) scale(0.8)
 
 .first-test
   display: flex
@@ -221,7 +161,4 @@ p.voice2.p7.on
   &.--is-active
     filter: blur(0px)
 
-.ytp-chrome-top .ytp-show-cards-title,
-.ytp-pause-overlay .ytp-scroll-min,
-.ytp-gradient-bottom
-  display: none !important
+@import closed-captions
