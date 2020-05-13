@@ -34,7 +34,6 @@ body {
   background: linear-gradient(270deg, #000000, #1d1515, #000);
   background-size: 600% 600%;
 }
-
 .animated-bg.--is-active {
   opacity: 0;
 }
@@ -53,10 +52,18 @@ body {
   mix-blend-mode: color;
   transform: scale(0.4);
 }
-
 .red-spotlight-1.--is-active {
   opacity: 1;
   transform: scale(1) translateX(100vw);
+}
+
+.red-spotlight-2 {
+  transform: scale(1) translateX(100vw);
+  background: cyan;
+}
+.red-spotlight-2.--is-active {
+  opacity: 1;
+  transform: scale(1) translateX(-100vw);
 }
 
 #video-placeholder {
@@ -81,17 +88,14 @@ body {
 #closed-captions {
   height: 100px;
 }
-
 #closed-captions p {
   position: absolute;
   transition: 0.05s;
   opacity: 0;
 }
-
 #closed-captions .on {
   opacity: 1;
 }
-
 #closed-captions .off {
   transition: 0.2s;
   opacity: 0;
@@ -121,7 +125,6 @@ div#closed-captions {
   justify-content: center;
   width: 100vw;
 }
-
 #closed-captions p.voice2.p7 {
   transition: 2s all ease-in-out;
   transform: translateX(180px);
@@ -220,13 +223,11 @@ p.voice2.p7.on {
   }
 }
 @keyframes blink-caret {
-  from,
-  to {
+  from, to {
     border-color: transparent 50%;
     border-color: cyan;
   }
 }
-
 .bg-video {
   position: fixed;
   width: 100vw;
@@ -235,7 +236,6 @@ p.voice2.p7.on {
   filter: blur(100px);
   opacity: 1;
 }
-
 .bg-video.--is-active {
   filter: blur(0px);
 }
@@ -245,3 +245,5 @@ p.voice2.p7.on {
 .ytp-gradient-bottom {
   display: none !important;
 }
+
+/*# sourceMappingURL=styles.css.map */
