@@ -3,56 +3,37 @@ body
   align-items: center
   flex-direction: column
   justify-content: center
-
   width: 100vw
   height: 100vh
   margin: 0
-
   background: #000
-
-// @-webkit-keyframes animatedBG
-//   0%
-//     background-position: 0% 50%
-//   50%
-//     background-position: 100% 50%
-//   100%
-//     background-position: 0% 50%
-
-// @-moz-keyframes animatedBG
-//     0%
-//   background-position: 0% 50%
-//     50%
-//   background-position: 100% 50%
-//     100%
-//   background-position: 0% 50%
 
 @keyframes animatedBG
   0%
     background-position: 0% 50%
+
   50%
     background-position: 100% 50%
+
   100%
     background-position: 0% 50%
 
 .animated-bg
   position: fixed
   z-index: -1
-
   width: 100vw
   height: 100vh
-
   transition: 1s ease
   -webkit-animation: animatedBG 30s ease infinite
   -moz-animation: animatedBG 30s ease infinite
   animation: animatedBG 30s ease infinite
-
   opacity: 0
   background: #000
-  background: linear-gradient(270deg, #000000, #1D1515, #000)
+  background: linear-gradient(270deg, #000000, #1d1515, #000)
   background-size: 600% 600%
 
-.animated-bg.--is-active
-  opacity: 000000
+  &.--is-active
+    opacity: 0
 
 .red-spotlight
   border-radius: 50%
@@ -61,17 +42,24 @@ body
   position: fixed
   z-index: 1
   left: 0
-  background: rgba(255, 0, 0, 1)
+  background: red
   filter: blur(131px)
   opacity: 0
   transition: 3s ease-in
   mix-blend-mode: color
-  transform: scale(.4)
+  transform: scale(0.4)
 
-.red-spotlight.--is-active
-  opacity: 1
-  // transform: translateX(100vw)
+  &-1.--is-active
+    opacity: 1
+    transform: scale(1) translateX(100vw)
+
+.red-spotlight-2
   transform: scale(1) translateX(100vw)
+  background: cyan
+
+  &.--is-active
+    opacity: 1
+    transform: scale(1) translateX(-100vw)
 
 #video-placeholder
   transform: scale(1.4)
@@ -84,112 +72,30 @@ body
   z-index: 1
   pointer-events: none
   opacity: 0
-  transition: .2s background
+  transition: 0.2s background
   mix-blend-mode: color
 
   &.--is-active
     opacity: 1
 
-#video-placeholder
+#closed-captions
+  height: 100px
 
-//  Basic mechanics
-//  Hide all paragraphs by default
-//  Show them when they receive the class 'on'
-//  Hide them when they receive the class 'off'
-//  Feel free to adjust the defaults to your needs.
+  & p
+    position: absolute
+    transition: 0.05s
+    opacity: 0
 
-#closed-captions p
-  position: absolute
+  & .on
+    opacity: 1
 
-  transition: 0.05s
-
-  opacity: 0
-
-#closed-captions .on
-  opacity: 1
-
-#closed-captions .off
-  transition: 0.2s
-
-  opacity: 0
+  & .off
+    transition: 0.2s
+    opacity: 0
 
 .voice1
   font-weight: bold
 
-<<<<<<< Updated upstream
-//  The first paragraph, with extended timing for 
-//  all siblings. Basically what it does is that
-//  it shows the text after a delay, which 
-//  corresponds with the time that the word is
-//  spoken.
-//  You probably want to change the styling.
-
-//  /* .p0 span 
-//  opacity: 0;
-//  font-family: brenner;
-
-//  .p0.on span:first-of-type 
-//  opacity: 1;
-//  transition: 0s;
-//  font-weight: 200;
-
-//  .p0.on span:nth-of-type(2) 
-//  opacity: 1;
-//  transition: 0s .4s;
-//  margin-right: -.25em;
-//  font-weight: 400;
-
-//  .p0.on span:nth-of-type(3) 
-//  opacity: 1;
-//  transition: 0s .5s;
-//  margin-right: -.25em;
-//  font-weight: 600;
-
-//  .p0.on span:nth-of-type(4) 
-//  opacity: 1;
-//  transition: 0s .7s;
-//  margin-right: -.25em;
-//  font-weight: 800;
-
-//  .p0.on span:nth-of-type(5) 
-//  opacity: 1;
-//  transition: 0s 1.1s;
-//  margin-right: -.25em;
-//  font-family: "brenner sans";
-
-//  .p0.on span:nth-of-type(6) 
-//  opacity: 1;
-//  transition: 0s 1.4s;
-//  margin-right: -.25em;
-//  font-family: "brenner display";
-
-//  .p0.on span:nth-of-type(7) 
-//  opacity: 1;
-//  transition: 0s 1.7s;
-//  margin-right: -.25em;
-//  font-family: "brenner script";
-
-//  .p0.on span:nth-of-type(8) 
-//  opacity: 1;
-//  transition: 0s 2s;
-//  font-family: "brenner script";
-
-//  .p0.on span:nth-of-type(9) 
-//  opacity: 1;
-//  transition: 0s 3s;
-//  font-family: "brenner Sans condensed";
-
-//  .p0.on span:nth-of-type(10) 
-//  opacity: 1;
-//  transition: 0s 3.2s;
-//  font-family: "brenner mono";
-
-//  .p0.on span:nth-of-type(11) 
-//  opacity: 1;
-//  transition: 0s 3.7s;
-//  font-family: "brenner slab";
-//   */
-=======
 div#closed-captions
   position: absolute
   z-index: 56
@@ -200,113 +106,107 @@ div#closed-captions
 #closed-captions .voice1
   text-align: center
   text-transform: uppercase
-
   color: #fff
 
 #closed-captions
   display: flex
   justify-content: center
-
   width: 100vw
 
-#closed-captions
-  p.voice2.p7
+  & p.voice2.p7
     transition: 2s all ease-in-out
     transform: translateX(180px)
 
-  p.voice2.p7.on
+  & p.voice2.p7.on
     transform: translateX(240px)
 
-  .standard-voice
+  & .standard-voice
     text-transform: initial !important
-
     font-size: 16px !important
 
-  p.voice3.p6
+  & p.voice3.p6
     transition: 1s transform
     transform: translate(-141px, -145px) scale(2)
     text-transform: uppercase
 
-    &.on
-      transform: translate(-161px, -135px) scale(2)
+  & p.voice3.p6.on
+    transform: translate(-161px, -135px) scale(2)
+    transform: translate(-141px, -145px)
+    text-transform: uppercase
 
-  .first-test
-    p.voice1
-      max-width: 550px
+  & p.voice3.p6.on
+    transform: translate(-161px, -135px)
 
-      font-size: 20px
+  & .first-test p.voice1
+    max-width: 550px
+    font-size: 20px
 
-  .second-test
+  & .second-test
     font-style: italic
 
-  .one-liner
+  & .one-liner
     position: fixed
     top: 50%
     right: 0
     mix-blend-mode: color
     left: 0
-
     max-width: initial !important
     max-width: 100%
     margin: 0 auto
-
     transform: translateY(-50%)
     text-align: center
     vertical-align: middle
     word-break: break-all
     pointer-events: none
-
-    color: rgba(255, 0, 0, 1)
-
+    color: red
     font-size: 320px !important
     font-size: 24vw !important
     line-height: 0.7
 
-  p.voice2.p42.on
-    transform: translateY(10px) scale(.9)
+  & p.voice2.p42.on
+    transform: translateY(10px) scale(0.9)
 
-  p.voice2.p43.on
-    transform: translateY(20px) scale(.8)
+  & p.voice2.p43.on
+    transform: translateY(20px) scale(0.8)
 
 .first-test
   display: flex
   align-items: center
   justify-content: center
-
   width: 100vw
   height: 100px
-
   pointer-events: none
 
 p.voice1.standard-voice.p0
   transform: translateX(150px)
 
-p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on
+p.voice2.p3.on,
+p.voice2.p4.on,
+p.voice2.p5.on,
+p.voice2.p7.on
   font-style: italic
 
-// https://css-tricks.com/snippets/css/typewriter-effect/
 .p0.on,
 .p44.on,
 .p45.on,
 .p46.on
   overflow: hidden
-
   margin: 0 auto
-
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite
   white-space: nowrap
-  letter-spacing: .15em
-
-  border-right: .15em solid cyan
+  letter-spacing: 0.15em
+  border-right: 0.15em solid orange
 
 @keyframes typing
   from
     width: 0
+
   to
     width: 100%
 
 @keyframes blink-caret
-  from, to
+  from,
+  to
     border-color: transparent 50%
     border-color: cyan
 
@@ -317,13 +217,11 @@ p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on
   z-index: -2
   filter: blur(100px)
   opacity: 1
-  // transition: 10s ease all
 
-.bg-video.--is-active
-  filter: blur(0px)
+  &.--is-active
+    filter: blur(0px)
 
 .ytp-chrome-top .ytp-show-cards-title,
 .ytp-pause-overlay .ytp-scroll-min,
 .ytp-gradient-bottom
   display: none !important
->>>>>>> Stashed changes

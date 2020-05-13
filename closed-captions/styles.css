@@ -31,7 +31,7 @@ body {
   animation: animatedBG 30s ease infinite;
   opacity: 0;
   background: #000;
-  background: linear-gradient(270deg, #000000, #1D1515, #000);
+  background: linear-gradient(270deg, #000000, #1d1515, #000);
   background-size: 600% 600%;
 }
 
@@ -54,7 +54,7 @@ body {
   transform: scale(0.4);
 }
 
-.red-spotlight.--is-active {
+.red-spotlight-1.--is-active {
   opacity: 1;
   transform: scale(1) translateX(100vw);
 }
@@ -78,6 +78,10 @@ body {
   opacity: 1;
 }
 
+#closed-captions {
+  height: 100px;
+}
+
 #closed-captions p {
   position: absolute;
   transition: 0.05s;
@@ -97,8 +101,6 @@ body {
   font-weight: bold;
 }
 
-<<<<<<< Updated upstream
-=======
 div#closed-captions {
   position: absolute;
   z-index: 56;
@@ -138,6 +140,11 @@ div#closed-captions {
 }
 #closed-captions p.voice3.p6.on {
   transform: translate(-161px, -135px) scale(2);
+  transform: translate(-141px, -145px);
+  text-transform: uppercase;
+}
+#closed-captions p.voice3.p6.on {
+  transform: translate(-161px, -135px);
 }
 #closed-captions .first-test p.voice1 {
   max-width: 550px;
@@ -185,7 +192,10 @@ p.voice1.standard-voice.p0 {
   transform: translateX(150px);
 }
 
-p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on {
+p.voice2.p3.on,
+p.voice2.p4.on,
+p.voice2.p5.on,
+p.voice2.p7.on {
   font-style: italic;
 }
 
@@ -198,7 +208,7 @@ p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on {
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   white-space: nowrap;
   letter-spacing: 0.15em;
-  border-right: 0.15em solid cyan;
+  border-right: 0.15em solid orange;
 }
 
 @keyframes typing {
@@ -210,11 +220,13 @@ p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on {
   }
 }
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent 50%;
     border-color: cyan;
   }
 }
+
 .bg-video {
   position: fixed;
   width: 100vw;
@@ -233,6 +245,3 @@ p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on {
 .ytp-gradient-bottom {
   display: none !important;
 }
-
->>>>>>> Stashed changes
-/*# sourceMappingURL=styles.css.map */
