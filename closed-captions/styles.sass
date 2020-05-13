@@ -8,6 +8,90 @@ body
   height: 100vh
   margin: 0
 
+  background: #000
+
+// @-webkit-keyframes animatedBG
+//   0%
+//     background-position: 0% 50%
+//   50%
+//     background-position: 100% 50%
+//   100%
+//     background-position: 0% 50%
+
+// @-moz-keyframes animatedBG
+//     0%
+//   background-position: 0% 50%
+//     50%
+//   background-position: 100% 50%
+//     100%
+//   background-position: 0% 50%
+
+@keyframes animatedBG
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+.animated-bg
+  position: fixed
+  z-index: -1
+
+  width: 100vw
+  height: 100vh
+
+  transition: 1s ease
+  -webkit-animation: animatedBG 30s ease infinite
+  -moz-animation: animatedBG 30s ease infinite
+  animation: animatedBG 30s ease infinite
+
+  opacity: 0
+  background: #000
+  background: linear-gradient(270deg, #000000, #1D1515, #000)
+  background-size: 600% 600%
+
+.animated-bg.--is-active
+  opacity: 000000
+
+.red-spotlight
+  border-radius: 50%
+  height: 100vh
+  width: 100vh
+  position: fixed
+  z-index: 1
+  left: 0
+  background: rgba(255, 0, 0, 1)
+  filter: blur(131px)
+  opacity: 0
+  transition: 3s ease-in
+  mix-blend-mode: color
+  transform: scale(.4)
+
+.red-spotlight.--is-active
+  opacity: 1
+  // transform: translateX(100vw)
+  transform: scale(1) translateX(100vw)
+
+#video-placeholder
+  transform: scale(1.4)
+
+.overlay
+  width: 640px
+  height: 360px
+  transform: scale(1.4)
+  position: fixed
+  z-index: 1
+  pointer-events: none
+  opacity: 0
+  transition: .2s background
+  mix-blend-mode: color
+
+  &.--is-active
+    opacity: 1
+
+#video-placeholder
+
 //  Basic mechanics
 //  Hide all paragraphs by default
 //  Show them when they receive the class 'on'
@@ -32,6 +116,7 @@ body
 .voice1
   font-weight: bold
 
+<<<<<<< Updated upstream
 //  The first paragraph, with extended timing for 
 //  all siblings. Basically what it does is that
 //  it shows the text after a delay, which 
@@ -104,3 +189,141 @@ body
 //  transition: 0s 3.7s;
 //  font-family: "brenner slab";
 //   */
+=======
+div#closed-captions
+  position: absolute
+  z-index: 56
+
+#closed-captions p
+  color: #fff
+
+#closed-captions .voice1
+  text-align: center
+  text-transform: uppercase
+
+  color: #fff
+
+#closed-captions
+  display: flex
+  justify-content: center
+
+  width: 100vw
+
+#closed-captions
+  p.voice2.p7
+    transition: 2s all ease-in-out
+    transform: translateX(180px)
+
+  p.voice2.p7.on
+    transform: translateX(240px)
+
+  .standard-voice
+    text-transform: initial !important
+
+    font-size: 16px !important
+
+  p.voice3.p6
+    transition: 1s transform
+    transform: translate(-141px, -145px) scale(2)
+    text-transform: uppercase
+
+    &.on
+      transform: translate(-161px, -135px) scale(2)
+
+  .first-test
+    p.voice1
+      max-width: 550px
+
+      font-size: 20px
+
+  .second-test
+    font-style: italic
+
+  .one-liner
+    position: fixed
+    top: 50%
+    right: 0
+    mix-blend-mode: color
+    left: 0
+
+    max-width: initial !important
+    max-width: 100%
+    margin: 0 auto
+
+    transform: translateY(-50%)
+    text-align: center
+    vertical-align: middle
+    word-break: break-all
+    pointer-events: none
+
+    color: rgba(255, 0, 0, 1)
+
+    font-size: 320px !important
+    font-size: 24vw !important
+    line-height: 0.7
+
+  p.voice2.p42.on
+    transform: translateY(10px) scale(.9)
+
+  p.voice2.p43.on
+    transform: translateY(20px) scale(.8)
+
+.first-test
+  display: flex
+  align-items: center
+  justify-content: center
+
+  width: 100vw
+  height: 100px
+
+  pointer-events: none
+
+p.voice1.standard-voice.p0
+  transform: translateX(150px)
+
+p.voice2.p3.on, p.voice2.p4.on, p.voice2.p5.on, p.voice2.p7.on
+  font-style: italic
+
+// https://css-tricks.com/snippets/css/typewriter-effect/
+.p0.on,
+.p44.on,
+.p45.on,
+.p46.on
+  overflow: hidden
+
+  margin: 0 auto
+
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite
+  white-space: nowrap
+  letter-spacing: .15em
+
+  border-right: .15em solid cyan
+
+@keyframes typing
+  from
+    width: 0
+  to
+    width: 100%
+
+@keyframes blink-caret
+  from, to
+    border-color: transparent 50%
+    border-color: cyan
+
+.bg-video
+  position: fixed
+  width: 100vw
+  height: 100vh
+  z-index: -2
+  filter: blur(100px)
+  opacity: 1
+  // transition: 10s ease all
+
+.bg-video.--is-active
+  filter: blur(0px)
+
+.ytp-chrome-top .ytp-show-cards-title,
+.ytp-pause-overlay .ytp-scroll-min,
+.ytp-gradient-bottom
+  display: none !important
+>>>>>>> Stashed changes
