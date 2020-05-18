@@ -140,6 +140,7 @@ p.voice2.p7.on {
   display: flex;
   justify-content: center;
   width: 100vw;
+  pointer-events: none;
 }
 #closed-captions p.voice2.p7 {
   transition: 2s all ease-in-out;
@@ -301,27 +302,19 @@ p.voice2.p7.on {
 }
 
 .caption7 #video-placeholder,
-.caption8 #video-placeholder,
-.caption9 #video-placeholder,
-.sound5 #video-placeholder,
-.sound6 #video-placeholder {
+.sound5 #video-placeholder {
   display: none;
 }
 .caption7 #video-placeholder.bg-video,
-.caption8 #video-placeholder.bg-video,
-.caption9 #video-placeholder.bg-video,
-.sound5 #video-placeholder.bg-video,
-.sound6 #video-placeholder.bg-video {
+.sound5 #video-placeholder.bg-video {
   display: block;
 }
 
-.sound6 #video-placeholder.bg-video {
-  filter: blur(0);
+.sound6 #video-placeholder {
+  display: none;
 }
-
-button#play {
-  position: fixed;
-  top: 20px;
+.sound6 .bg-video {
+  filter: blur(0);
 }
 
 /*# sourceMappingURL=styles.css.map */

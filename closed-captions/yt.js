@@ -25,17 +25,6 @@ const $redSpotlight1 = document.querySelector('.red-spotlight-1');
 const $redSpotlight2 = document.querySelector('.red-spotlight-2');
 const $overlay = document.querySelector('.overlay');
 
-document.querySelector('#play').addEventListener('click', function () {
-  const $bgVid = document.querySelector('.bg-video');
-  const $video = document.querySelector('#video-placeholder');
-
-  setTimeout(() => {
-    $bgVid.src += '&autoplay=1';
-  }, 2000);
-
-  $video.src += '&autoplay=1';
-});
-
 function broodjeAap(e) {
   const $video = document.querySelector('#video-placeholder');
   const $bgVid = document.querySelector('.bg-video');
