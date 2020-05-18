@@ -67,7 +67,9 @@
 
   opacity: 1
 
-.sound3 .overlay
+.sound3 .overlay,
+.sound4 .overlay,
+.sound5 .overlay
   width: 100vw
   height: 100vh
 
@@ -75,10 +77,7 @@
   background: red
 
 .caption7,
-// .caption8,
-// .caption9,
-.sound5,
-// .sound6
+.sound5
 
   #video-placeholder
     display: none
@@ -92,4 +91,9 @@
     display: none
 
   .bg-video
+    transform: scale(0.7)
+
     filter: blur(0)
+
+.bg-video
+  transition: 42s ease-in transform

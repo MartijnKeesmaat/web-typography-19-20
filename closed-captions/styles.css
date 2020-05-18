@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: flex;
   align-items: center;
@@ -219,19 +220,31 @@ p.voice2.p7.on {
 }
 
 .sound0 #closed-captions:before {
-  content: "[Daunting music]";
+  content: "🎵 Daunting music";
 }
 
 .sound1 #closed-captions:before {
-  content: "[Alarm sound]";
+  content: "🚨 Alarm sound";
 }
 
 .sound2 #closed-captions:before {
-  content: "[Siren sound]";
+  content: "🔵 Siren sound";
 }
 
 .sound3 #closed-captions:before {
-  content: "[Alarm sound]";
+  content: "🚨 Alarm sound";
+}
+
+.sound4 #closed-captions:before {
+  content: "🚨 Alarm sound";
+}
+
+.sound5 #closed-captions:before {
+  content: "🚨 Alarm sound";
+}
+
+.sound6 #closed-captions:before {
+  content: "⚡️ Creeping noise";
 }
 
 .red-spotlight {
@@ -294,7 +307,9 @@ p.voice2.p7.on {
   opacity: 1;
 }
 
-.sound3 .overlay {
+.sound3 .overlay,
+.sound4 .overlay,
+.sound5 .overlay {
   width: 100vw;
   height: 100vh;
   opacity: 1;
@@ -314,7 +329,12 @@ p.voice2.p7.on {
   display: none;
 }
 .sound6 .bg-video {
+  transform: scale(0.7);
   filter: blur(0);
+}
+
+.bg-video {
+  transition: 42s ease-in transform;
 }
 
 /*# sourceMappingURL=styles.css.map */
