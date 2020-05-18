@@ -155,17 +155,11 @@ p.voice2.p7.on {
   font-size: 16px !important;
 }
 #closed-captions p.voice3.p6 {
-  transition: 1s transform;
-  transform: translate(-141px, -145px) scale(2);
-  text-transform: uppercase;
-}
-#closed-captions p.voice3.p6.on {
-  transform: translate(-161px, -135px) scale(2);
-  transform: translate(-141px, -145px);
-  text-transform: uppercase;
-}
-#closed-captions p.voice3.p6.on {
   transform: translate(-161px, -135px);
+  text-transform: uppercase;
+  color: red;
+  font-family: "Brenner Display";
+  mix-blend-mode: color;
 }
 #closed-captions .first-test p.voice1 {
   max-width: 550px;
