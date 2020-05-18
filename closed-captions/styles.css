@@ -38,51 +38,8 @@ body {
   opacity: 0;
 }
 
-.red-spotlight {
-  border-radius: 50%;
-  height: 100vh;
-  width: 100vh;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  background: red;
-  filter: blur(131px);
-  opacity: 0;
-  transition: 3s ease-in;
-  mix-blend-mode: color;
-  transform: scale(0.4);
-}
-.red-spotlight-1.--is-active {
-  opacity: 1;
-  transform: scale(1) translateX(100vw);
-}
-
-.red-spotlight-2 {
-  transform: scale(1) translateX(100vw);
-  background: cyan;
-}
-.red-spotlight-2.--is-active {
-  opacity: 1;
-  transform: scale(1) translateX(-100vw);
-}
-
 #video-placeholder {
   transform: scale(1.4);
-}
-
-.overlay {
-  width: 640px;
-  height: 360px;
-  transform: scale(1.4);
-  position: fixed;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0;
-  transition: 0.2s background;
-  mix-blend-mode: color;
-}
-.overlay.--is-active {
-  opacity: 1;
 }
 
 #closed-captions {
@@ -248,6 +205,123 @@ p.voice2.p7.on {
 }
 #closed-captions section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(11) {
   font-family: "Brenner Mono";
+}
+
+#closed-captions:before {
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.sound0 #closed-captions:before {
+  content: "[Daunting music]";
+}
+
+.sound1 #closed-captions:before {
+  content: "[Alarm sound]";
+}
+
+.sound2 #closed-captions:before {
+  content: "[Siren sound]";
+}
+
+.sound3 #closed-captions:before {
+  content: "[Alarm sound]";
+}
+
+.red-spotlight {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  transition: 3s ease-in;
+  transform: scale(0.4);
+  opacity: 0;
+  border-radius: 50%;
+  background: red;
+  filter: blur(131px);
+  mix-blend-mode: color;
+}
+
+.sound0 .red-spotlight {
+  transform: scale(1) translateX(100vw);
+  opacity: 1;
+}
+
+.blue-spotlight {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10vw;
+  width: 100vh;
+  height: 100vh;
+  transition: 3s ease-in;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
+  background: cyan;
+  filter: blur(131px);
+  mix-blend-mode: soft-light;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  width: 640px;
+  height: 360px;
+  transition: 0.2s background;
+  transform: scale(1.4);
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: color;
+}
+
+.sound1 .overlay {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background: red;
+}
+
+.sound2 .blue-spotlight {
+  transform: scale(2);
+  opacity: 1;
+}
+
+.sound3 .overlay {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background: red;
+}
+
+.caption7 #video-placeholder,
+.caption8 #video-placeholder,
+.caption9 #video-placeholder,
+.sound5 #video-placeholder,
+.sound6 #video-placeholder {
+  display: none;
+}
+.caption7 #video-placeholder.bg-video,
+.caption8 #video-placeholder.bg-video,
+.caption9 #video-placeholder.bg-video,
+.sound5 #video-placeholder.bg-video,
+.sound6 #video-placeholder.bg-video {
+  display: block;
+}
+
+.sound6 #video-placeholder.bg-video {
+  filter: blur(0);
+}
+
+button#play {
+  position: fixed;
+  top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

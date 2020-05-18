@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <button id="play">PLAY</button>
+
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/vrP-_T-h9YM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
     <div class="overlay"></div>
     <div id="video-placeholder"></div>
 
     <div class="animated-bg"></div>
-    <div class="red-spotlight red-spotlight-1"></div>
-    <div class="red-spotlight red-spotlight-2"></div>
+    <div class="red-spotlight"></div>
+    <div class="blue-spotlight"></div>
 
     <div id="closed-captions">
       <section class="first-test">
@@ -200,6 +202,16 @@
         <p class="voice1">You're not even close to baseline</p>
       </section>
     </div>
+
+    <iframe
+      class="bg-video"
+      width="1920"
+      height="1080"
+      src="https://www.youtube.com/embed/vrP-_T-h9YM?controls=0&amp;start=2&mute=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
 
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>

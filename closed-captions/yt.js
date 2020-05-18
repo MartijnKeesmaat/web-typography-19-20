@@ -1,4 +1,4 @@
-const fx = true;
+const fx = false;
 var player;
 
 function onYouTubeIframeAPIReady() {
@@ -25,17 +25,27 @@ const $redSpotlight1 = document.querySelector('.red-spotlight-1');
 const $redSpotlight2 = document.querySelector('.red-spotlight-2');
 const $overlay = document.querySelector('.overlay');
 
+document.querySelector('#play').addEventListener('click', function () {
+  const $bgVid = document.querySelector('.bg-video');
+  const $video = document.querySelector('#video-placeholder');
+
+  setTimeout(() => {
+    $bgVid.src += '&autoplay=1';
+  }, 2000);
+
+  $video.src += '&autoplay=1';
+});
+
 function broodjeAap(e) {
   const $video = document.querySelector('#video-placeholder');
   const $bgVid = document.querySelector('.bg-video');
 
-  console.log(e.data);
+  $bgVid.src += '&autoplay=1';
+  // $bgVid.src += ;
+  $bg.classList.add('--is-active');
+
+  // console.log(e.data);
   if (e.data == 1 && fx) {
-    $bgVid.src += '&autoplay=1';
-    $bgVid.src += '&mute=1';
-
-    $bg.classList.add('--is-active');
-
     $redSpotlight1.classList.add('--is-active');
 
     setTimeout(() => {
@@ -102,18 +112,20 @@ function toggleOverlay(time, color, size) {
 }
 
 function initialize() {
-  const video = document.getElementById('video-placeholder');
+  // const video = document.getElementById('video-placeholder');
 
   // Copy the <li> element and its child nodes
-  var cln = video.cloneNode(true);
+  // var cln = video.cloneNode(true);
 
-  cln.classList.add('bg-video');
+  // cln.classList.add('bg-video');
+  // cln.currentTime = 10;
+  // cln.src += '&t=0m20s';
   // Append the cloned <li> element to <ul> with id="myList1"
-  document.body.appendChild(cln);
+  // document.body.appendChild(cln);
   // Update the controls on load
   addSpans();
 
-  document.querySelector('.ytp-pause-overlay').style.display = 'none';
+  // document.querySelector('.ytp-pause-overlay').style.display = 'none';
 }
 
 function addSpans() {
@@ -145,6 +157,7 @@ function updateTimerDisplay() {
     i++;
   }
   var i = 0;
+  // console.log(soundsCustom);
   while (i < sounds.length) {
     sTimes(i, sounds[i], t);
     i++;
@@ -158,27 +171,38 @@ function updateTimerDisplay() {
 }
 function pTimes(num, startT, endT, curT) {
   var curP = document.querySelector('.p' + num);
+
   if (curT > endT && !curP.classList.contains('off')) {
     curP.classList.add('off');
+    document.body.classList.remove(`caption${num}`);
+    console.log(num);
   }
   if (curT < endT && curP.classList.contains('off')) {
     curP.classList.remove('off');
+    // console.log(num);
+    // document.body.classList.remove(`caption${num}`);
   }
   if (curT > startT && !curP.classList.contains('on')) {
+    document.body.classList.add(`caption${num}`);
     curP.classList.add('on');
   }
   if (curT < startT && curP.classList.contains('on')) {
     curP.classList.remove('on');
+    // console.log(num);
+    // document.body.classList.remove(`caption${num}`);
   }
 }
 
 function sTimes(num, soundStarts, curT) {
   var soundClass = 'sound' + num;
   var b = document.querySelector('body');
-  if (curT > soundStarts && !b.classList.contains(soundClass)) {
+
+  // console.log(soundClass);
+
+  if (curT > soundStarts[0] && curT < soundStarts[1] && !b.classList.contains(soundClass)) {
     b.classList.add(soundClass);
   }
-  if (curT < soundStarts && b.classList.contains(soundClass)) {
+  if (curT > soundStarts[1] && b.classList.contains(soundClass)) {
     b.classList.remove(soundClass);
   }
 }
