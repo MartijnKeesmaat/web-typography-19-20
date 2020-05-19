@@ -157,18 +157,16 @@ function updateTimerDisplay() {
     }, 100);
   }
 }
+
 function pTimes(num, startT, endT, curT) {
   var curP = document.querySelector('.p' + num);
 
   if (curT > endT && !curP.classList.contains('off')) {
     curP.classList.add('off');
     document.body.classList.remove(`caption${num}`);
-    console.log(num);
   }
   if (curT < endT && curP.classList.contains('off')) {
     curP.classList.remove('off');
-    // console.log(num);
-    // document.body.classList.remove(`caption${num}`);
   }
   if (curT > startT && !curP.classList.contains('on')) {
     document.body.classList.add(`caption${num}`);
@@ -176,16 +174,12 @@ function pTimes(num, startT, endT, curT) {
   }
   if (curT < startT && curP.classList.contains('on')) {
     curP.classList.remove('on');
-    // console.log(num);
-    // document.body.classList.remove(`caption${num}`);
   }
 }
 
 function sTimes(num, soundStarts, curT) {
   var soundClass = 'sound' + num;
   var b = document.querySelector('body');
-
-  // console.log(soundClass);
 
   if (curT > soundStarts[0] && curT < soundStarts[1] && !b.classList.contains(soundClass)) {
     b.classList.add(soundClass);
