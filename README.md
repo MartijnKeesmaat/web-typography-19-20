@@ -1,3 +1,53 @@
+## Feedback Vasilis #1
+- Vette effecten, leuk geexperimenteerd
+- Sommige effecten zijn best extreem, test dit met Marie
+- De timing van de video gaat niet gelijk met de achtergrond video (misschien wil je te veel doen)
+
+## Feedback Marie #1
+- De effecten voegen veel toe en zijn intens, leuke experimenten
+- Maar, het is niet altijd duidelijk wat de geluiden zijn die worden gevisualiseerd, voeg dit toe als closed caption
+- Het is niet altijd duidelijk wie wat zegt, breng hier meer onderscheid in aan
+
+---
+
+## Feedback Vasilis #2
+- Nog steeds zijn de experiment leuk maar sommige komen over alsof het per ongeluk gaat
+  - Dit gaat bijvoorbeeld over de overgang naar de overhoring scene
+
+## Feedback Marie #2
+- De rode tekst is intensief en aggresief wat volgens mij goed bij fragment hoort. Het valt echt op en is uniek.
+- Als je de tekst zo styled in verschillende manieren kan het overkomen dat iemand anders het zegt
+- De geluidseffecten worden nu ook beschreven als closed caption.
+  - Deze staan te ver naar onder op grotere schermen
+  - De emoji lijdt af van de tekst
+- Er is geexperimenteerd met de overgang naar de laatste scene
+  - Deze was te experimenteel en niet duidelijk genoeg
+  - Met dat soort geluiden lijkt het alsof er iets mis gaat in de browser
+
+## Wat ga ik hiermee doen
+- Maak geen gebruik meer van de emoticons voor de captions
+- Positioneer de closed captions relatief aan de video
+- Maak de overgang naar de laatste scene door duidelijker de video niet weg te halen
+- Maak de tekst meer uniform met de andere tekst van voice1
+- Groeper de closed captions met de video
+- Betere bescrhijving van het geluid vooral over de intensiteit
+
+# Dynamische classes
+![e88f118e44aa246e09b461bbb6835e36](https://user-images.githubusercontent.com/8048514/82343380-0ea4b780-99f3-11ea-8d4c-e4328a88a3b2.gif)
+
+
+# Emoticons
+![85329f9cc26ed7cfefbbcbd269653e6a](https://user-images.githubusercontent.com/8048514/82342846-65f65800-99f2-11ea-90f6-5bc18aa6aa89.gif)
+
+
+
+
+
+
+
+
+
+
 # Responsive Typography, 2019/2020
 
 Als je doof bent, of als je om een andere reden geen geluid kunt horen, dan mis je veel informatie als je een film kijkt. Knisperende voetstappen, langzaam aanzwellende muziek, nerveus getik op een deur, je hoort het natuurlijk allemaal niet. Nu bestaat er zoiets als *closed caption*, wat een type ondertiteling is waarbij ook dingen als omgevingsgeluiden en de muziek beschreven worden. Hierdoor krijgt een kijker die informatie wel binnen.
