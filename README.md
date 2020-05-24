@@ -1,3 +1,8 @@
+![d754cfcd550e219e9767fa7ce3556ebe](https://user-images.githubusercontent.com/8048514/82759627-e6e89180-9dee-11ea-90b3-272977a4873a.gif)
+
+![85329f9cc26ed7cfefbbcbd269653e6a (1)](https://user-images.githubusercontent.com/8048514/82759628-e8b25500-9dee-11ea-982b-32110a39ef9b.gif)
+
+
 ## Feedback Vasilis #1
 - Vette effecten, leuk geexperimenteerd
 - Sommige effecten zijn best extreem, test dit met Marie
