@@ -46,7 +46,6 @@ body {
 
 #closed-captions {
   height: 100px;
-  font-family: "Brenner Mono Light";
 }
 #closed-captions p {
   position: absolute;
@@ -78,7 +77,6 @@ div#closed-captions {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-size: 30px;
 }
 
 .first-test {
@@ -99,18 +97,6 @@ p.voice2.p4.on,
 p.voice2.p5.on,
 p.voice2.p7.on {
   font-style: italic;
-}
-
-.p0.on,
-.p44.on,
-.p45.on,
-.p46.on {
-  overflow: hidden;
-  margin: 0 auto;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  border-right: 0.15em solid orange;
 }
 
 @keyframes typing {
@@ -154,18 +140,14 @@ p.voice2.p7.on {
 }
 #closed-captions .standard-voice {
   text-transform: initial !important;
-  font-size: 16px !important;
 }
 #closed-captions p.voice3.p6 {
   transform: translate(-161px, -135px);
   text-transform: uppercase;
-  color: red;
-  font-family: "Brenner Display";
   mix-blend-mode: color;
 }
 #closed-captions .first-test p.voice1 {
   max-width: 550px;
-  font-size: 20px;
 }
 #closed-captions .second-test {
   font-style: italic;
@@ -184,9 +166,8 @@ p.voice2.p7.on {
   word-break: break-all;
   pointer-events: none;
   color: red;
-  font-family: "Brenner Display";
   font-size: 320px !important;
-  font-size: 24vw !important;
+  font-weight: 300;
   line-height: 0.7;
   mix-blend-mode: color;
 }
@@ -201,16 +182,14 @@ p.voice2.p7.on {
   padding: 5px 0;
   background: #000;
 }
-#closed-captions section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(11) {
-  font-family: "Brenner Mono";
-}
-
 .sound-effects {
   position: fixed;
   top: calc(50% + 290px);
   transform: translateY(-50%);
+  text-transform: uppercase;
   color: #fff;
-  font-family: "Brenner Mono";
+  font-family: "Brenner Sans Condensed";
+  font-size: 18px;
 }
 .sound-effects:before {
   margin: 0 auto;
@@ -244,6 +223,16 @@ p.voice2.p7.on {
 
 .sound6 .sound-effects:before {
   content: "[Creeping noise]";
+}
+
+.voice1 {
+  font-family: "Brenner Serif";
+  font-size: 19px;
+}
+
+.voice2 {
+  font-family: "Brenner Sans Condensed";
+  font-size: 20px;
 }
 
 .red-spotlight {
@@ -315,10 +304,6 @@ p.voice2.p7.on {
   background: red;
 }
 
-.caption7 #video-placeholder,
-.sound5 #video-placeholder {
-  display: none;
-}
 .caption7 #video-placeholder.bg-video,
 .sound5 #video-placeholder.bg-video {
   display: block;

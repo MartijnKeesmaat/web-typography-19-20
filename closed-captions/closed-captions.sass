@@ -16,19 +16,18 @@
   & .standard-voice
     text-transform: initial !important
 
-    font-size: 16px !important
+    // font-size: 16px !important
 
   & p.voice3.p6
     transform: translate(-161px, -135px)
     text-transform: uppercase
-
-    color: red
+    // color: red
     // transition: 1s transform
     // transform: translate(-141px, -145px) scale(2)
     // text-transform: uppercase
 
+    // font-family: "Brenner Display"
 
-    font-family: "Brenner Display"
 
     mix-blend-mode: color
 
@@ -42,7 +41,7 @@
   & .first-test p.voice1
     max-width: 550px
 
-    font-size: 20px
+    // font-size: 20px
 
   & .second-test
     font-style: italic
@@ -64,10 +63,13 @@
     pointer-events: none
 
     color: red
+    // font-family: "Brenner Display"
 
-    font-family: "Brenner Display"
+
     font-size: 320px !important
-    font-size: 24vw !important
+    font-weight: 300
+    // font-size: 24vw !important
+
     line-height: 0.7
 
     mix-blend-mode: color
@@ -85,17 +87,21 @@
     background: #000
 
   section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(11)
-    font-family: "Brenner Mono"
+    // font-family: "Brenner Mono"
 
 .sound-effects
   position: fixed
   top: calc(50% + 290px)
 
   transform: translateY(-50%)
+  text-transform: uppercase
 
   color: #fff
 
-  font-family: "Brenner Mono"
+  font-family: "Brenner Sans Condensed"
+  font-size: 18px
+
+  // font-family: "Brenner Mono"
 
   &:before
     margin: 0 auto
@@ -124,3 +130,11 @@
 
 .sound6 .sound-effects:before
   content: "[Creeping noise]"
+
+.voice1
+  font-family: "Brenner Serif"
+  font-size: 19px
+
+.voice2
+  font-family: "Brenner Sans Condensed"
+  font-size: 20px
