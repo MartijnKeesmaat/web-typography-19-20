@@ -1,10 +1,12 @@
 const fx = false;
 var player;
 
+const w = 1000;
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video-placeholder', {
-    // width: 600,
-    // height: 400,
+    width: w,
+    height: (w / 16) * 9,
     videoId: 'vrP-_T-h9YM',
     playerVars: {
       //start:

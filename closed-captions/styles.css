@@ -40,10 +40,6 @@ body {
   opacity: 0;
 }
 
-#video-placeholder {
-  transform: scale(1.4);
-}
-
 #closed-captions {
   height: 100px;
 }
@@ -158,7 +154,6 @@ p.voice2.p7.on {
   right: 0;
   left: 0;
   max-width: initial !important;
-  max-width: 100%;
   margin: 0 auto;
   transform: translateY(-50%);
   text-align: center;
@@ -166,7 +161,7 @@ p.voice2.p7.on {
   word-break: break-all;
   pointer-events: none;
   color: red;
-  font-size: 320px !important;
+  font-size: 150px !important;
   font-weight: 300;
   line-height: 0.7;
   mix-blend-mode: color;
@@ -177,11 +172,7 @@ p.voice2.p7.on {
 #closed-captions p.voice2.p43.on {
   transform: translateY(20px) scale(0.8);
 }
-#closed-captions section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(9),
-#closed-captions section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(10) {
-  padding: 5px 0;
-  background: #000;
-}
+
 .sound-effects {
   position: fixed;
   top: calc(50% + 290px);
@@ -202,23 +193,23 @@ p.voice2.p7.on {
 }
 
 .sound1 .sound-effects:before {
-  content: "[Alarm sound]";
+  content: "[Loud alarm sound]";
 }
 
 .sound2 .sound-effects:before {
-  content: "[Siren sound]";
+  content: "[Faint siren sound]";
 }
 
 .sound3 .sound-effects:before {
-  content: "[Alarm sound]";
+  content: "[Loud alarm sound]";
 }
 
 .sound4 .sound-effects:before {
-  content: "[Alarm sound]";
+  content: "[Loud alarm sound]";
 }
 
 .sound5 .sound-effects:before {
-  content: "[Alarm sound]";
+  content: "[Loud alarm sound]";
 }
 
 .sound6 .sound-effects:before {
@@ -227,7 +218,7 @@ p.voice2.p7.on {
 
 .voice1 {
   font-family: "Brenner Serif";
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .voice2 {
@@ -307,6 +298,7 @@ p.voice2.p7.on {
 .caption7 #video-placeholder.bg-video,
 .sound5 #video-placeholder.bg-video {
   display: block;
+  transform: scale(1.2);
 }
 
 .sound6 #video-placeholder {
