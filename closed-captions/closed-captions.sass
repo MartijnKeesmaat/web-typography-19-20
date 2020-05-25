@@ -87,35 +87,40 @@
   section.first-test > p.voice1.standard-voice.p0.on > span:nth-child(11)
     font-family: "Brenner Mono"
 
-#closed-captions:before
+.sound-effects
   position: fixed
-  right: 0
-  bottom: 40px
-  left: 0
+  top: calc(50% + 290px)
 
-  margin: 0 auto
-
-  text-align: center
+  transform: translateY(-50%)
 
   color: #fff
 
-.sound0 #closed-captions:before
-  content: "Daunting music"
+  font-family: "Brenner Mono"
 
-.sound1 #closed-captions:before
-  content: "Alarm sound"
+  &:before
+    margin: 0 auto
 
-.sound2 #closed-captions:before
-  content: "Siren sound"
+    text-align: center
 
-.sound3 #closed-captions:before
-  content: "Alarm sound"
+    color: #fff
 
-.sound4 #closed-captions:before
-  content: "Alarm sound"
+.sound0 .sound-effects:before
+  content: "[Daunting music]"
 
-.sound5 #closed-captions:before
-  content: "Alarm sound"
+.sound1 .sound-effects:before
+  content: "[Alarm sound]"
 
-.sound6 #closed-captions:before
-  content: "Creeping noise"
+.sound2 .sound-effects:before
+  content: "[Siren sound]"
+
+.sound3 .sound-effects:before
+  content: "[Alarm sound]"
+
+.sound4 .sound-effects:before
+  content: "[Alarm sound]"
+
+.sound5 .sound-effects:before
+  content: "[Alarm sound]"
+
+.sound6 .sound-effects:before
+  content: "[Creeping noise]"

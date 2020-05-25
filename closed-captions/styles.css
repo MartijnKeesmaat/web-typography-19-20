@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   display: flex;
   align-items: center;
@@ -23,6 +22,8 @@ body {
 }
 .animated-bg {
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: -1;
   width: 100vw;
   height: 100vh;
@@ -77,6 +78,7 @@ div#closed-captions {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  font-size: 30px;
 }
 
 .first-test {
@@ -203,42 +205,45 @@ p.voice2.p7.on {
   font-family: "Brenner Mono";
 }
 
-#closed-captions:before {
+.sound-effects {
   position: fixed;
-  right: 0;
-  bottom: 40px;
-  left: 0;
+  top: calc(50% + 290px);
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: "Brenner Mono";
+}
+.sound-effects:before {
   margin: 0 auto;
   text-align: center;
   color: #fff;
 }
 
-.sound0 #closed-captions:before {
-  content: "🎵 Daunting music";
+.sound0 .sound-effects:before {
+  content: "[Daunting music]";
 }
 
-.sound1 #closed-captions:before {
-  content: "🚨 Alarm sound";
+.sound1 .sound-effects:before {
+  content: "[Alarm sound]";
 }
 
-.sound2 #closed-captions:before {
-  content: "🔵 Siren sound";
+.sound2 .sound-effects:before {
+  content: "[Siren sound]";
 }
 
-.sound3 #closed-captions:before {
-  content: "🚨 Alarm sound";
+.sound3 .sound-effects:before {
+  content: "[Alarm sound]";
 }
 
-.sound4 #closed-captions:before {
-  content: "🚨 Alarm sound";
+.sound4 .sound-effects:before {
+  content: "[Alarm sound]";
 }
 
-.sound5 #closed-captions:before {
-  content: "🚨 Alarm sound";
+.sound5 .sound-effects:before {
+  content: "[Alarm sound]";
 }
 
-.sound6 #closed-captions:before {
-  content: "⚡️ Creeping noise";
+.sound6 .sound-effects:before {
+  content: "[Creeping noise]";
 }
 
 .red-spotlight {
