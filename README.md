@@ -25,12 +25,12 @@
   - Met dat soort geluiden lijkt het alsof er iets mis gaat in de browser
 
 ## Wat ga ik hiermee doen
-- Maak geen gebruik meer van de emoticons voor de captions
-- Positioneer de closed captions relatief aan de video
-- Maak de overgang naar de laatste scene door duidelijker de video niet weg te halen
-- Maak de tekst meer uniform met de andere tekst van voice1
-- Groeper de closed captions met de video
-- Betere bescrhijving van het geluid vooral over de intensiteit
+[x] Maak geen gebruik meer van de emoticons voor de captions
+[x] Positioneer de closed captions relatief aan de video
+[x] Maak de overgang naar de laatste scene door duidelijker de video niet weg te halen
+[x] Maak de tekst meer uniform met de andere tekst van voice1
+[x] Groeper de closed captions met de video
+[x] Betere bescrhijving van het geluid vooral over de intensiteit
 
 # Dynamische classes
 ![e88f118e44aa246e09b461bbb6835e36](https://user-images.githubusercontent.com/8048514/82343380-0ea4b780-99f3-11ea-8d4c-e4328a88a3b2.gif)
