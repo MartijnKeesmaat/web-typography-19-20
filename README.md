@@ -1,3 +1,95 @@
+# Type selection
+During the video you hear a conversation between two main voices. The first voice you hear is that from a system or person who instructs the other voice. The other voice belongs to the main character.
+
+## Voice 1
+This voice probably belongs to a system which has a human-like quality. It starts of fairly neutral but comes acoss more and more aggresive as the video clip goes on. Especially in the scene where the main character is interogated. It's when this system picks up the pace and calls out those two words: "cells" and "interlinked".
+
+### Characteristics
+- In control
+- Aggresive
+- Daunting
+
+At first this voice was displayed in a mono typeface. This typeface was picked because of the sci-fy themes which occur in the movie.
+
+However the visual traits of this type category felt misplaced during the interogation scene.
+
+Here is a comparison of these type categories compared.
+
+<img width="1440" alt="Screenshot 2020-05-25 at 20 52 13" src="https://user-images.githubusercontent.com/8048514/82837639-ee309d80-9ec9-11ea-8112-62a5ed032c1a.png">
+
+![image](https://user-images.githubusercontent.com/8048514/82837766-53848e80-9eca-11ea-86db-dcfecead59aa.png)
+
+The serif category has a much stronger impact. Even in thicker font-weights. The lack of serif makes the typeface feel too clean for the this threatening/daunting feeling that is expressed. There is something about the hook-like features which make it seem more dangerous.
+
+> The feedback from Marie was very positive about this choice of type. I was curious about if it might come across too strong. When I addresed this issue said that she really liked it like this because it visually interesting and stands out from the rest.
+
+Marie also mentioned that if there various typeface being used it can come across as if it's being spoken by mutliple people. Which is why the serif type is adopted for each instance where the first voice is spoken.
+
+## Voice 2
+The second voice is that of the main character. The main character has a stoic way of speaking in the video presented. There is a lack of emotion, not that of anger, nor of happiness. This voice is therefore displayed in a sans-serif typeface. A more neutral typeface selection for the modern age.
+
+The visual properties of this vary in small ways. For example in his first part of the dialogue he recites his baseline. He does this in a narritive-like manner. This is depicted in a subtle italic verson of the typeface.
+
+<img width="1440" alt="Screenshot 2020-05-25 at 21 18 03" src="https://user-images.githubusercontent.com/8048514/82838747-6d73a080-9ecd-11ea-8aba-4ea851c08a98.png">
+
+![image](https://user-images.githubusercontent.com/8048514/82838755-72d0eb00-9ecd-11ea-901c-884141643728.png)
+
+# Type placement
+Something that often bothers me when watching movies with subtitles is the placement. Placing the closed captions at the bottom makes the entire experience less immersive. The text is fighting the visuals for attention. Your eyes are guided from visual to bottom for each time a sound plays (which is a lot).
+
+Having those experiences in the back in mind, I started experimenting. If the visuals were fairly minimal, the text is placed in the center. If there is a visually important on screen, it gets priority. An example of this can be seen above. The main character is on screen which makes way for the type. It creates a horizontal composition which makes us focus first on the character, then our eyes are guided to the text.
+
+![image](https://user-images.githubusercontent.com/8048514/82838758-75334500-9ecd-11ea-99c8-626bf169d92d.png)
+
+These show small a small increment in position and scale. A subtle difference to communicate the repeating of the same dialogue.
+
+![image](https://user-images.githubusercontent.com/8048514/82838761-76fd0880-9ecd-11ea-8440-6fa9f7980a96.png)
+![image](https://user-images.githubusercontent.com/8048514/82838765-795f6280-9ecd-11ea-9546-f7265c5bf07a.png)
+
+# The Transition
+The whole first part of the video is actually happening in the enterocation room. It's here that the dialogue concurrs, but this isn't made clear from the beginning.
+
+To capitalize on this, the video is presented in a frame from the start. Behind the video you see a blurred video to add ambient effects. The thought behind it is to show that there is something more going on behind the video itself.
+
+![712a00579470572060652c9952a24851](https://user-images.githubusercontent.com/8048514/82840154-e248d980-9ed1-11ea-9f86-91d5fd3b99d4.gif)
+
+The to transition to the actual conversation we are greeted with a full screen view. Making the scene feel more intimate than the more distant conversation before.
+
+![06351d109a475212701f68a8ff08aa0b](https://user-images.githubusercontent.com/8048514/82840267-39e74500-9ed2-11ea-9231-0dcd03775de6.gif)
+
+# Background sound
+There are three main sound effects in this this video
+- 1 Subtle background sounds
+- 2 Loud alarm(ing) sound
+- 3 A high pitched noise which creeps up
+
+## Subtle background sounds
+Sound like these are subtle and add a lot of ambience. The make the scene feel larger than what we actually see. One of these sounds is a siren. It sound like it could be from a police car. This i
+
+![giphy (2)](https://user-images.githubusercontent.com/8048514/82840659-b0d10d80-9ed3-11ea-9d6d-109e266ef510.gif)
+
+## Loud and intimidating alarms
+Then there are some load and mechanical sounding alarms. These are aggresive and sound dangerous. It sound like it could be from a prison, like a place you don't want to be in. Since the sound is so large, the effect is place over the entire screen. Giving it a strong and intimidating feeling.
+
+![giphy](https://user-images.githubusercontent.com/8048514/82840455-fa6d2880-9ed2-11ea-9610-8f6390090522.gif)
+
+![giphy (1)](https://user-images.githubusercontent.com/8048514/82840457-fb05bf00-9ed2-11ea-8815-bbc99f50789a.gif)
+
+---
+
+![724500319bfb59915e62f5c7be788499](https://user-images.githubusercontent.com/8048514/82840958-b4b15f80-9ed4-11ea-848d-e52ff2d33f53.gif)
+
+## The creeping high pitched sound
+Finally there is this noise which adds a lot of tension. In design you can create tension by placing elements close to an edge. The lack of space makes us a bit uncomfortable. With this in mind we can implement a similar effect by shrinking the video over time. The longer you watch, the less space you have.
+
+The sound itself starts of unnotisable and gets louder and louder. This easing of sound is also applied to the animation curve. This is done by a slow ease-in and fast ease-out. Making the video shrink very slow, slow, normal, faster, and you hopefully get nervous by this point.
+
+![f28adaa7d5a5342a84a7ce713014f4fd](https://user-images.githubusercontent.com/8048514/82841319-e37c0580-9ed5-11ea-881a-141ad6661fb1.gif)
+
+
+
+
+
 ## Feedback Vasilis #1
 - Vette effecten, leuk geexperimenteerd
 - Sommige effecten zijn best extreem, test dit met Marie
@@ -25,12 +117,12 @@
   - Met dat soort geluiden lijkt het alsof er iets mis gaat in de browser
 
 ## Wat ga ik hiermee doen
-[x] Maak geen gebruik meer van de emoticons voor de captions
-[x] Positioneer de closed captions relatief aan de video
-[x] Maak de overgang naar de laatste scene door duidelijker de video niet weg te halen
-[x] Maak de tekst meer uniform met de andere tekst van voice1
-[x] Groeper de closed captions met de video
-[x] Betere bescrhijving van het geluid vooral over de intensiteit
+- [x] Maak geen gebruik meer van de emoticons voor de captions
+- [x] Positioneer de closed captions relatief aan de video
+- [x] Maak de overgang naar de laatste scene door duidelijker de video niet weg te halen
+ [x] Maak de tekst meer uniform met de andere tekst van voice1
+- [x] Groeper de closed captions met de video
+- [x] Betere bescrhijving van het geluid vooral over de intensiteit
 
 # Dynamische classes
 ![e88f118e44aa246e09b461bbb6835e36](https://user-images.githubusercontent.com/8048514/82343380-0ea4b780-99f3-11ea-8d4c-e4328a88a3b2.gif)
