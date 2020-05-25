@@ -86,8 +86,25 @@ The sound itself starts of unnotisable and gets louder and louder. This easing o
 
 ![f28adaa7d5a5342a84a7ce713014f4fd](https://user-images.githubusercontent.com/8048514/82841319-e37c0580-9ed5-11ea-881a-141ad6661fb1.gif)
 
+# Use of color
+The main goal of this assignment to me is to accompany the the video with contextual effects and more meaningful type. There are parts I wanted to highlight and make your feel something. For this to happen there needed to be a strong neutral tone with sporadic moments which captivate the attention. This is done by using a minimal color palette. The type is often displayed with pure white. Then the color red is used to highlight those parts which need to stand out. The parts which stand out are aggresive and intimidating. Which is why the color red is chosen.
 
+# Exclusive design
+## Study situation
+Watch the movie without sound
+This movie is boring without it
+Captions at the bottom are annoying
+There are not a lot of these type of captions or examples
 
+## Ignore conventions
+Closed captions are displayed at the bottom set in white with a text shadow. Lets move the position. Let's blow up the text and see what happens.
+
+## Prioritise identity
+Test, and ask. Be open. Ask obvious questions.
+
+## Add Nonsense
+Don't play the video in full screen
+Play it in smaller, then remove the video entirely and only show  a blurry background
 
 
 ## Feedback Vasilis #1
