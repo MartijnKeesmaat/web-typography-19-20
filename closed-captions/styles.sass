@@ -85,6 +85,9 @@ body
 .voice1
   font-weight: bold
 
+.voice1, .voice2
+  text-shadow: 1px 1px 20px rgba(0,0,0,0.3)
+
 div#closed-captions
   position: absolute
   z-index: 56
@@ -98,7 +101,7 @@ div#closed-captions
   color: #fff
   // font-size: 30px
 
-.first-test
+.first-test, .second-test
   display: flex
   align-items: center
   justify-content: center
@@ -152,3 +155,13 @@ p.voice2.p7.on
 
 @import closed-captions
 @import sound-effects
+@import timing
+
+section.second-test
+  position: fixed
+  left: 0
+  right: 0
+  z-index: 10000000
+
+  .voice1
+    font-style: initial

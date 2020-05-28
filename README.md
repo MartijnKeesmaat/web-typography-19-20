@@ -73,7 +73,7 @@ There are three main sound effects in this video
 
 ## Subtle background sounds
 
-Sound like these is subtle and adds a lot of ambiances. The make the scene feel larger than what we see. One of these sounds is a siren. It sounds like it could be from a police car. This i
+These type of sounds are subtle and add a lot of ambiances. They make the scene feel larger than what we see. One of these sounds is a siren. It sounds like it could be from a police car. The visual that was used for this resemebles that. A blue moving light, bleeding subtly into the video.
 
 ![giphy (2)](https://user-images.githubusercontent.com/8048514/82840659-b0d10d80-9ed3-11ea-9d6d-109e266ef510.gif)
 
@@ -91,7 +91,7 @@ Then there are some load and mechanical sounding alarms. These are aggressive an
 
 ## The creeping high pitched sound
 
-Finally, there is this noise which adds a lot of tension. In design you can create tension by placing elements close to an edge. The lack of space makes us a bit uncomfortable. With this in mind we can implement a similar effect by shrinking the video over time. The longer you watch, the less space you have.
+Finally, there is this noise which adds a lot of tension. In design you can create tension by placing elements close to an edge. The lack of space makes us uncomfortable. With this in mind we can implement a similar effect by shrinking the video over time. The longer you watch, the less space you have.
 
 The sound itself starts of unnoticeable and gets louder and louder. This easing of sound is also applied to the animation curve. This is done by a slow ease-in and fast ease-out. Making the video shrink very slow, slow, normal, faster, and you hopefully get nervous by this point.
 
@@ -105,11 +105,13 @@ The main goal of this assignment to me is to accompany the video with contextual
 
 ## Study situation
 
-To understand the movie one needs to watch it without sound. One then realizes how boring it is. The added sound effect builds a great deal of tension and pressure. When you start looking at how other movies do this, you realize that most don't. There are a select few which got creative with their captions.
+To understand the movie one needs to watch it without sound. One then realizes how boring it is. This makes you realize that the added sound effect builds a great deal of tension and pressure.
+
+When you start looking at how other movies use captions to achieve this effect, you realize that most don't. Only a select few got creative with their captions. This makes the situation like a blank canvas. It meant I needed to do experiments on my own and start exploring.
 
 ## Ignore conventions
 
-There aren't that many conventions when it comes to closed captions. We are familiar with the centered text at the bottom of the screen. I'm not a fan of this convention. It isn't an immersive experience. You are constantly moving your eyes from bottom to center. Trying to do two things at the same time. This positioning is the first convention I broke.
+There aren't that many conventions when it comes to closed captions. We are familiar with the centered text at the bottom of the screen. Which is a convention that I'm not a fan of. It causes the expercience to be less immersive. You are constantly moving your eyes from bottom to center. Trying to do two things at the same time. This positioning is the first convention I broke.
 
 ## Prioritise identity
 
@@ -166,7 +168,7 @@ Also who is speaking and when is added to the body. This helps with certain styl
   - It was too experimental and not clear enough
   - With those kinds of sounds, it seems like something is going wrong in the browser
 
-## Wat ga ik hiermee doen
+## What I did
 
 - [x] Stop using emoticons in the captions
 - [x] Position the closed captions relative to the video

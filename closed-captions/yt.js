@@ -1,7 +1,7 @@
 const fx = false;
 var player;
 
-const w = 1000;
+const w = 800;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video-placeholder', {
